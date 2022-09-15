@@ -18,4 +18,9 @@ npm i ts-node-dev -D
 npm create vite@latest >>> configurar nome do projeto "web" usando React e Typescript
 Vai criar o projeto na pasta web. Atentar para acessar a pasta e iniciar o vscode na pasta web
 ...
+Passou pro React (web)
+Depois do React vai iniciar o mobile
+npm install --global --expo-cli 
+expo init mobile (vai iniciar um projeto com nome mobile e criar a pasta mobile)
+...
 
