@@ -1,27 +1,10 @@
-interface PropsMeuParagrafo {
-  texto: string;
-}
-
-
-  function MeuParagrafo (props: PropsMeuParagrafo) {
-    return (
-      <p>
-      {props.texto}
-      </p>
-    )
-  }
-    
+import './styles/main.css';
 
 function App() {
 
     return (
-      <>
-      <h1>Este é o titulo do Componente</h1>
-      <MeuParagrafo texto="Primeiro" />
-      <MeuParagrafo texto="Segundo"/>
-      <MeuParagrafo texto="Terceiro"/>
-      </>
-    )
+      <div className="w-2 bg-violet-500"></div>
+      )
 
 
 }
