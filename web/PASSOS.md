@@ -12,4 +12,6 @@ Configurar o tailwind.config.cjs >>> indicou o caminho pro 'content' : './src/**
 Criar dentro de src a pasta styles e dentro desta, arquivo main.css com o conteudo da configuracao conforme documentacao
 Instalar no VSCode extensao do "postcss language support" e do próprio tailwindcss
 Instalar biblioteca phosphor react para icones
-
+...
+mudou pra mobile (aula 2 tempo 1:05:00)
+...
