@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        universo: "url('/bg-universo.jpg')"
+        universo: "url('/bg-universo.jpg')",
+        'nlw-gradient': 'linear-gradient(red, green)',
+        'game-gradient': 'linear-gradient(blue, grey'
       }
     },
   },

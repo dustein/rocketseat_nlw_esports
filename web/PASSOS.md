@@ -11,3 +11,5 @@ npx tailwindcss init -p (a flag '-p' cria o postcss.config.cjs, que faz a integr
 Configurar o tailwind.config.cjs >>> indicou o caminho pro 'content' : './src/**/*.tsx'
 Criar dentro de src a pasta styles e dentro desta, arquivo main.css com o conteudo da configuracao conforme documentacao
 Instalar no VSCode extensao do "postcss language support" e do próprio tailwindcss
+Instalar biblioteca phosphor react para icones
+
