@@ -29,3 +29,13 @@ npx prisma init -h (se quiser ver a documentacao. Vai ver que quando inicia o pr
 npx prisma init --datasource-provider SQlite
 vai ser criado a pasta prisma com o schema, e o arquivo .env para variaveis de ambiente, onde definimos onde vai ficar o arquivo do banco de dados.
 (obs no settings.json User ele colocou uma linha "[prisma]": { "editor.formatOnSave": true },  -- isso vai formatar a sintaxe do schema cada vez que salvamos) 
+No schema.prisma, criar o modelo, para em seguida rodar a migration (o controle de versoes) dele criando o db.
+npx prisma migrate dev (vai perguntar o nome da migrate, no caso estamos criando a tabela game conforme o schema)
+Para visualizar: npx prisma studio
+Em seguida voltamos ao schema para criar nova tabela pra aplicacao, agora de anuncios Ads. Na configuracao do Ads, inserir uma entrada game Game, ou seja, um atributo game do tipo do modelo Game, ao auto save, vai fazer a ligacao, configuracao relacionada com o model Game, o @relation
+Rodar a migration de novo para adicionar essa nova tabela
+no id dos models para criacao de tabela, configurar o @default uuid, rodar o migrate
+Instalar o client do prisma para acessar o banco de dados pela aplicacao
+npm install @prisma/client
+OBS - o tsnode dev vai parar de funcionar porque a conexao com o BD nbo prisma impede que ele restart sozinho. Adicionar a flag --exit-child no script dev do package.json
+Criou ads nos games pelo prisma studio na unha 
