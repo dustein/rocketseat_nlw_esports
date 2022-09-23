@@ -23,4 +23,9 @@ Depois do React vai iniciar o mobile
 npm install --global --expo-cli 
 expo init mobile (vai iniciar um projeto com nome mobile e criar a pasta mobile)
 ...
-
+voltando ao backend
+npm i prisma -D
+npx prisma init -h (se quiser ver a documentacao. Vai ver que quando inicia o prisma pode passar o tipo de banco de dados que vai utilizar, com o comando '--datasource-provider')
+npx prisma init --datasource-provider SQlite
+vai ser criado a pasta prisma com o schema, e o arquivo .env para variaveis de ambiente, onde definimos onde vai ficar o arquivo do banco de dados.
+(obs no settings.json User ele colocou uma linha "[prisma]": { "editor.formatOnSave": true },  -- isso vai formatar a sintaxe do schema cada vez que salvamos) 
