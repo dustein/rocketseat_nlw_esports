@@ -8,11 +8,31 @@ app.use(express.json());
 const prisma = new PrismaClient();
 
 app.get('/games', async(req, res) => {
-  const games = await prisma.game.findMany();
+  const games = await prisma.game.findMany({
+    include: {
+      _count: {
+        select: {
+          ads: true,
+        }
+      }
+    }
+  });
 
   return res.json(games)
 })
 
+
+app.get('/games/:id/ads', async (req, res) => {
+  const gameIdSelecionado = req.params.id;
+
+  const ads = await prisma.ad.findMany({
+    where: {
+      gameId : gameIdSelecionado,
+    }
+  })
+
+  return res.json(ads)
+})
 
 app.get('/', (req, res) => {
   console.log('Acessou Root GET')
