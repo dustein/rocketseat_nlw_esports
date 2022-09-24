@@ -46,8 +46,7 @@ app.get('/games/:id/ads', async (req, res) => {
     orderBy: {
       createdAt: 'desc'
     }
-
-    
+  
   })
 
 
