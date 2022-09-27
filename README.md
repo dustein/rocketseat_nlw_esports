@@ -39,4 +39,9 @@ Instalar o client do prisma para acessar o banco de dados pela aplicacao
 npm install @prisma/client
 OBS - o tsnode dev vai parar de funcionar porque a conexao com o BD nbo prisma impede que ele restart sozinho. Adicionar a flag --exit-child no script dev do package.json
 Criou ads nos games pelo prisma studio na unha
-AULA 3 1:29:00
+Finalizou aula 3 instalando o cors
+npm i cors
+npm i @types/cors -D
+FIM aula 3
+
+
