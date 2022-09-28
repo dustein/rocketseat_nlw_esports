@@ -15,3 +15,6 @@ Instalar biblioteca phosphor react para icones
 ...
 mudou pra mobile (aula 2 tempo 1:05:00)
 ...
+Aula 4
+Vamos pegar as ancoras no App.tsx que se repetem para cada imagem de game, e vamos criar um Componente react
+Cria pasta components, arquivo GameBanner.tsx

@@ -1,4 +1,5 @@
 import { MagnifyingGlassPlus } from 'phosphor-react'
+import { GameBanner } from './components/GameBanner';
 import './styles/main.css';
 import logoImage from './assets/logo.svg'
 
@@ -12,6 +13,7 @@ function App() {
 
         <div className='grid grid-cols-6 gap-4 mt-12'>
 
+          <GameBanner />
           <a href="" className='relative rounded-lg overflow-hidden'>
             <img src="/game-1.png" alt="" />
             <div className='w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0'>
