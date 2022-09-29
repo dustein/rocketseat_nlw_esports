@@ -13,34 +13,13 @@ function App() {
 
         <div className='grid grid-cols-6 gap-4 mt-12'>
 
-          <GameBanner />
-          <a href="" className='relative rounded-lg overflow-hidden'>
-            <img src="/game-1.png" alt="" />
-            <div className='w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0'>
-              <strong className='font-bold text-white block text-sm'>League of Legends</strong>
-              <span className='text-zinc-300 text-sm block'>4 anúncios</span>
-            </div>
-          </a>
+          <GameBanner bannerUrl='/game1.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game2.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game3.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game4.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game5.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game6.png' title='League of Legends' adsCount={5}/>
 
-          <a href="" className='relative'>
-            <img src="/game-2.png" alt="" />
-          </a>
-
-          <a href="" className='relative'>
-            <img src="/game-3.png" alt="" />
-          </a>
-
-          <a href="" className='relative'>
-            <img src="/game-4.png" alt="" />
-          </a>
-
-          <a href="" className='relative'>
-            <img src="/game-5.png" alt="" />
-          </a>
-
-          <a href="" className='relative'>
-            <img src="/game-6.png" alt="" />
-          </a>
 
         </div>
 
