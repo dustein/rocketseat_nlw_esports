@@ -2,6 +2,7 @@ import { MagnifyingGlassPlus } from 'phosphor-react'
 import { GameBanner } from './components/GameBanner';
 import './styles/main.css';
 import logoImage from './assets/logo.svg'
+import { CreateAdBanner } from './components/CreateAdBanner';
 
 function App() {
 
@@ -13,26 +14,17 @@ function App() {
 
         <div className='grid grid-cols-6 gap-4 mt-12'>
 
-          <GameBanner bannerUrl='/game-1.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game-1.png' title='Jogo 1' adsCount={5}/>
           <GameBanner bannerUrl='/game-2.png' title='Jogo 2' adsCount={2}/>
-          <GameBanner bannerUrl='/game-3.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game-4.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game-5.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game-6.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game-3.png' title='Jogo 3' adsCount={5}/>
+          <GameBanner bannerUrl='/game-4.png' title='Jogo 4' adsCount={5}/>
+          <GameBanner bannerUrl='/game-5.png' title='Jogo 5' adsCount={5}/>
+          <GameBanner bannerUrl='/game-6.png' title='Jogo 6' adsCount={5}/>
 
 
         </div>
 
-        <div className='bg-slate-800 px-8 py-6 mt-8 self-stretch rounded-lg flex justify-between items-center'>
-          <div>
-          <strong className='text-white text-2xl font-black block'>Vamos Jogar</strong>
-          <span className='text-zinc-400'>Publicar anúncio</span>
-          </div>
-          <button className='py-3 px-4 bg-gray-500 hover:bg-slate-600 text-zinc-100 rounded flex items-center gap-3'>
-            <MagnifyingGlassPlus size={24}/>
-            Publicar
-          </button>
-        </div>
+        <CreateAdBanner />
       </div>
       )
 

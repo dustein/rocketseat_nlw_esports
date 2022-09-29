@@ -19,3 +19,4 @@ Aula 4
 Vamos pegar as ancoras no App.tsx que se repetem para cada imagem de game, e vamos criar um Componente react
 Cria pasta components, arquivo GameBanner.tsx
 Aula 4 - 16:00
+Passa o banner para componente tambem, CreateAdBanner.tsx

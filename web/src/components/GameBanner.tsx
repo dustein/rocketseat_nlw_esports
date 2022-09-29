@@ -9,9 +9,9 @@ export function GameBanner(props: GameBanneProps) {
     <div>
       <a href="" className='relative rounded-lg overflow-hidden'>
         <img src={props.bannerUrl} alt="" />
-          <div className='w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0'>
+          <div className="text-center">
             <strong className='font-bold text-white block text-sm'>{props.title}</strong>
-            <span className='text-zinc-300 text-sm block'>{props.adsCount} anúncio(s)</span>
+            <span className='text-zinc-300 text-xs block'>{props.adsCount} anúncio(s)</span>
           </div>
       </a>
     </div>
