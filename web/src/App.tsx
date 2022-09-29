@@ -13,12 +13,12 @@ function App() {
 
         <div className='grid grid-cols-6 gap-4 mt-12'>
 
-          <GameBanner bannerUrl='/game1.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game2.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game3.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game4.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game5.png' title='League of Legends' adsCount={5}/>
-          <GameBanner bannerUrl='/game6.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game-1.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game-2.png' title='Jogo 2' adsCount={2}/>
+          <GameBanner bannerUrl='/game-3.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game-4.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game-5.png' title='League of Legends' adsCount={5}/>
+          <GameBanner bannerUrl='/game-6.png' title='League of Legends' adsCount={5}/>
 
 
         </div>
