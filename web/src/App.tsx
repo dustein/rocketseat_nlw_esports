@@ -5,17 +5,26 @@ import logoImage from './assets/logo.svg'
 import { useEffect, useState } from 'react';
 import { response } from 'express';
 
+interface Game {
+  id: string;
+  title: string;
+  bannerUrk: string;
+  _count: {
+    ads: number;
+  }
+}
+
 function App() {
 
-    const [games, setGames] = useState([]);
+    const [games, setGames] = useState<Game[]>([]);
 
     //OBS: no segundo parametro do useEffect, se deixar o array vazio [], a função que colocarmos no primeiro parâmetro vai ser rodada apenas uma vez, não importa quantas vezes o useState refaça a renderização da aplicação, o que é ótimo para o propósito que estamos usando agora, que seria trazer dados de uma API.
     //Verificar funcionamento da API de Fetch
     useEffect(() => {
-      fetch('http://localhost:5500/games')
+      fetch('http://localhost:3333/games')
         .then(response => response.json())
         .then(data => {
-          console.log(data)
+          setGames(data)
         })
     }, [])
 
@@ -27,12 +36,12 @@ function App() {
 
         <div className='grid grid-cols-6 gap-4 mt-12'>
 
-          <GameBanner bannerUrl='/game-1.png' title='Jogo 1' adsCount={5}/>
-          <GameBanner bannerUrl='/game-2.png' title='Jogo 2' adsCount={2}/>
-          <GameBanner bannerUrl='/game-3.png' title='Jogo 3' adsCount={5}/>
-          <GameBanner bannerUrl='/game-4.png' title='Jogo 4' adsCount={5}/>
-          <GameBanner bannerUrl='/game-5.png' title='Jogo 5' adsCount={5}/>
-          <GameBanner bannerUrl='/game-6.png' title='Jogo 6' adsCount={5}/>
+          {games.map(game => {
+            return (
+              <GameBanner key={game.id} bannerUrk={game.bannerUrk} title={game.title} adsCount={game._count.ads}/>
+            )
+          })}
+   
 
 
         </div>

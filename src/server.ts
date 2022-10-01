@@ -6,7 +6,7 @@ import { convertMinutesToHourString } from './utils/convert-minutes-to-hour-stri
 
 const app = express();
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 //para permitir  a conexao com o banco de dados criado pelo prisma
 const prisma = new PrismaClient();
 
@@ -113,4 +113,4 @@ app.post('/games/:id/ads', async (req, res) => {
 })
 
 
-app.listen(3333, () => { console.log('Servidor ON !')})
+app.listen(3333, () => { console.log('Servidor ON porta 3333!')})
